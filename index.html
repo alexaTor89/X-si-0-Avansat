@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>x si 0</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <!--jocul-->
+        <canvas id="canva" width="600" height="600">
+            Browser-ul nu suporta elemntul "canvas".
+        </canvas>
+
+        <!--Meniul de inceput-->
+        <div class="meniu" id="meniuStart">
+            <h1>X si 0 Avansat</h1>
+            <p class="meniuButon" onclick="alegeRandul()"><button>1 Jucator</button></p>
+            <p class="meniuButon" onclick="startJoc(1)"><button>2 Jucatori</button></p>
+        </div>
+
+        <!--Se alege optiunea de a incepe jocul cu 1 jucator sau 2-->
+        <div class="meniu" id="meniuTura" hidden="ascuns">
+            <h1>Alege cine incepe:</h1>
+            <p class="meniuButon" onclick="setJoc(0)"><button>Jucatorul</button></p>
+            <p class="meniuButon" onclick="setJoc(1)"><button>A.I.</button></p>
+        </div>
+
+        <div class="meniu" id="meniuCastig" hidden="ascuns">
+            <h1 id="rezultat">Jucatorul 1 a castigat!</h1>
+            <p class="meniuButon" onclick="meniu()"><button>Joaca din nou</button></p>
+        </div>
+    </main>
+
+    <script src="control.js"></script>
+</body>
+</html>

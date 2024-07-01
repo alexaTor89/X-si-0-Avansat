@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Înălțimea completă a ferestrei */
+    margin: 0;
+    background-color: #f0f0f0;
+}
+main {
+    position: relative;
+    margin-top: 10px;
+    width: 600px;
+    height: 600px;
+    border: 15px double rgb(65, 65, 65);
+}
+div.meniu {
+    position: absolute;
+    top: 26%;
+    right: 15%;
+    width: 70%;
+    height: 33%;
+}
+h1 {
+    text-align: center;
+    font-weight: bold;
+    line-height: 60px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    color:rgb(214, 237, 23);
+    text-shadow: 3px 4px 2px rgb(0, 0, 0);
+    user-select: none;
+
+    background-color:rgba(65, 65, 65, 0.595);
+    padding: 15px 15px;
+    border-radius: 40px;
+}
+.meniuButon {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #4A597F;
+}
+button {
+    background-color: rgb(214, 237, 23);
+    border: 3px solid rgb(23, 237, 216);
+    border-radius: 20px;
+    padding: 15px 30px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 21px;
+    margin: 2px 1px;
+    cursor: pointer;
+    font-family: 'Courier New';
+    font-weight: bold;
+    color: rgb(65, 65, 65);
+
+}
+button:hover {
+    background-color:rgb(65, 65, 65);
+    border: 3px solid rgb(214, 237, 23);
+    color: rgb(23, 237, 216);
+}
+button:active {
+    background: rgb(124, 135, 134);
+}
+button:focus {
+    outline:0;
+}
+#rezultat {
+    border-radius: 20px;
+    background-color:rgb(65, 65, 65);
+    border: 3px solid rgb(214, 237, 23);
+    color: rgb(23, 237, 216);
+    padding: 15px 30px;
+}
